@@ -1,15 +1,158 @@
 <head>
   <style> 
-    body{ background-color: cyan;
-    align: center;}
+    body{ 
+      background-color: cyan;
+      align: center;
+    }
+    	  .dropbtn 
+	  {
+		background-color: black;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+	  }
+
+	  .dropdown 
+	  {
+		position: relative;
+		display: inline-block;
+	  }
+
+	  .dropdown-content 
+	  {
+		display: none;
+		position: absolute;
+		background-color: black;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	  }
+
+	  .dropdown-content a 
+	  {
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	  }
+
+	  .dropdown-content a:hover 
+	  {
+		background-color: gold
+	  }
+
+	  .dropdown:hover .dropdown-content 
+	  {
+		display: block;
+	  }
+
+	  .dropdown:hover .dropbtn 
+	  {
+		background-color: gold;
+	  }
+	  
+		nav ul ul 
+        {
+            display: none;
+        }
+        
+        nav ul li:hover > ul 
+        {
+            display: block;
+        }
+        
+          
+        nav ul 
+        {
+            background: #efefef; 
+            background: linear-gradient(top, #660022 0%, #330011 100%);  
+            background: -moz-linear-gradient(top, #660022 0%, #330011 100%); 
+            background: -webkit-linear-gradient(top, #660022 0%,#330011 100%); 
+            box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+            padding: 0 20px;
+            border-radius: 10px;  
+            list-style: none;
+            position: relative;
+            display: inline-table;
+        }        
+    nav ul:after 
+    {
+                content: ""; clear: both; display: block;
+		}
+                       
+        nav ul li 
+        {
+                float: left;
+        }
+        
+        
+		nav ul li:hover 
+        {
+                background: #330011; 
+                background: linear-gradient(top, #330011 0%, #33000f 40%);
+                background: -moz-linear-gradient(top, #330011 0%, #33000f 40%);
+                background: -webkit-linear-gradient(top, #330011 0%, #33000f 40%);
+        }
+                
+                
+        nav ul li:hover a 
+        {
+                color: #ffffff; /*=white#ff00ff; /*#fff; */ /*menu name color */
+        }
+                
+                
+        nav ul li a 
+        {
+                display: block; padding: 25px 40px;
+                color: red; /* main menu name #660033;*/ text-decoration: none;
+    }
+                       
+        nav ul ul 
+        {
+                background: #0d0d0d; /*#0d0d0d;*/ border-radius: 0px; padding: 0; /*sub menues */
+                position: absolute; top: 100%;
+        }
+          
+		nav ul ul li 
+        {
+			float: none; 
+			border-top: 1px solid black; /*#6699ff; */ /*border top */
+			border-bottom: 1px solid black; /*border down */
+			position: relative;
+    }
+        nav ul ul li a 
+        {
+                padding: 10px 40px;
+                color: #660020;
+        }	
+                            
+        nav ul ul li a:hover 
+        {
+                background: gold; /* #660033; */ /*submenu background color*/
+        }
+                
+        nav ul ul ul 
+        {
+                position: absolute; left: 100%; top:0;
+        }
   </style>
 </head>
 <body>
 <h1 style="text-align: center; color: #cc0033;"> Welcome to Javier Gonzalez </h1>
-  <div style="text-align: center"><img src="20170517_214113.png" alt="HTML5 Icon" height="340" float="center"> </div>
-  <p style="font-size: 24; font: papyrus; text-align: center; color: #b30077;"> Hello, this is the webpage of Javier Gonzalez. <br> 
+  
+  <div style="text-align: center"><img src="20170517_214113.png" alt="HTML5 Icon" height="320" float="center"> </div>
+  
+  <p style="font-size: 24; font: arial; text-align: center; color: #b30077;"> Hello, this is the webpage of Javier Gonzalez. <br> 
     Javier Gonzalez is a cismale Software Development student at Florida International University. <br> 
     In addition to these he is also a huge lover of anime, sci-fi/fantasy/horror movies, and video games (in particular fighting games).
     <br>  He likes to draw in his free time, has a particular love and focus on character and creature design, <br> 
     and aspires to be a game developer. </p>
+  <nav align="center">
+		<ul>
+			<li><a href="">Favorite Fighting Games</a></li>
+			<li><a href="">Art Gallery</a></li>
+		</ul>
+	</nav>
 </body>
